@@ -10,6 +10,10 @@ SendKeys has no dependencies besides the .NET Framework 2.0 and can be deployed 
 ###### Same but wait 3 seconds upfront:
 `SendKeys.exe -pid:4711 "format C:{Enter}" -wait:3000`
 
+###### Same but read a file and send the contents of that file to the new pid:
+`SendKeys.exe -pid:4711 -wait:3000 -file:"C:\test.txt"`
+
+
 ## Noteworthy
 
 As always, you'll need to add quotes to the argument string if it contains spaces (like shown in the examples). Otherwise, Windows will split it up as multiple arguments.
